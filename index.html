@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="shortcut icon" href="#" />
+  <title>Pendu</title>
+</head>
+
+<body>
+  <!--Boite générale, regroupe zone graphique et zone txt-->
+  <section class="element">
+    <!--Zone de jeu (graphique)-->
+    <div class="blocJeu" style ="background-image: url(./assets/image/arbre.webp);">
+      <svg height="450" width="400" class="figure-pendu">
+        <line x1="220" y1="80" x2="220" y2="130" class="perso" />
+        <!--corde-->
+        <circle cx="220" cy="135" r="25" class="perso" />
+        <!--Tete-->
+        <line x1="220" y1="235" x2="220" y2="160" class="perso" />
+        <!--Corp-->
+        <line x1="190" y1="315" x2="220" y2="239" class="perso" />
+        <!--Jambe Gauche-->
+        <line x1="260" y1="315" x2="220" y2="239" class="perso" />
+        <!--Jambe Droite-->
+        <line x1="180" y1="235" x2="220" y2="185" class="perso" />
+        <!--Bras Gauche-->
+        <line x1="260" y1="235" x2="220" y2="185" class="perso" />
+        <!--Bras Droit-->
+      </svg>
+    </div>
+    <!--Zone de texte, mot a deviner, erreur,-->
+    <div class="blocInfo">
+      <div class="lettre-erreur-element">
+        <p>Lettres incorrectes :</p>
+        <div id="lettre-erreur"></div>
+      </div>
+      <!--Zone du mot a deviner-->
+      <div class="mot" id="mot"></div>
+    </div>
+
+    <!-- boite de message fin + btn rejouer -->
+    <div class="message-element" id="message-element">
+      <div class="message">
+        <h2 id="message-fin">Tu as gagné</h2>
+        <button id="play-bouton">Rejouer!</button>
+      </div>
+    </div>
+
+    <!-- boite de notification -->
+    <div class="notification-element" id="notification-element">
+      <p>Vous avez déja essayé cette lettre !</p>
+    </div>
+
+    <div class="message-debut" id="message-debut">
+      <div class="message-start">
+        <h2 id="message-fin"><img src="./assets/image/regle-pendu.PNG" alt="" class="img-msg" ></h2>
+        <button id="play">Entrer</button>
+      </div>
+  </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
