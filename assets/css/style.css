@@ -97,7 +97,6 @@ section.element {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/image/arbre.webp);
   background-size: 1000%;
   background-position: right;
   animation: apparitionD 1.5s ease-out;
